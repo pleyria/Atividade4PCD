@@ -1,1 +1,1 @@
-# Atividade4PCD
+# Atividade 4 - Programação Concorrente e Distribuída
