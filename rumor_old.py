@@ -11,10 +11,11 @@ acreditar, nao pode mudar de tipo
 import random
 import igraph
 import matplotlib.pyplot as plt
+from timeit import default_timer as timer
 
 # parametros da simulacao
-num_vertices = 1000
-tmax = 500
+num_vertices = 5000
+tmax = 2000
 
 # estruturas auxiliares
 tipo = []
@@ -95,12 +96,17 @@ rede = igraph.Graph.Barabasi(num_vertices)
 # salva uma imagem do grafo
 # igraph.plot(rede, bbox = (900, 900), vertex_size = 5).save('grafo.png')
 
+# registra o tempo inicial
+start = timer()
+
 print("Inicializando o grafo...")
 
 # valores iniciais
-t1 = random.randint(1, num_vertices/100)
-t2 = random.randint(1, num_vertices/100)
-t0 = num_vertices - t1 - t2
+pmax = 3
+# t1 e t2 comecam entre 1% e pmax% dos nos
+t1 = random.randint(int(num_vertices/100), pmax*int(num_vertices/100))
+t2 = random.randint(int(num_vertices/100), pmax*int(num_vertices/100))
+t0 = num_vertices - t1 - t2 # o restante eh t0
 # tipos
 i = 0
 while i < t1:
@@ -126,7 +132,7 @@ print("Executando a simulacao...")
 
 # simulacao
 i = 1
-while i <= tmax:
+while i < tmax:
     q0 = 0
     q1 = 0
     q2 = 0
@@ -146,14 +152,18 @@ while i <= tmax:
     quant_tipo0.append(q0)
     quant_tipo1.append(q1)
     quant_tipo2.append(q2)
-    print("i = ", i)
+    #print("i = ", i)
     i += 1
 
+# registra o tempo final
+finish = timer()
+print("Tempo de execucao = ", (finish - start), " segundos")
+'''
 print("Simulacao finalizada!")
 print("n0 = ", q0)
 print("n1 = ", q1)
 print("n2 = ", q2)
-
+'''
 # grafico
 '''
 plt.plot(tempo, quant_tipo0, 'g', label = "nao conhece")

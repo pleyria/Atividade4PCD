@@ -25,3 +25,7 @@ Isso irá gerar os seguintes arquivos/diretórios:
 * `rumor.html`: Arquivo html que pode ser aberto em um navegador para ver as alterações que o Cython aplicou no código python durante a compilação.
 
 * `rumor.cpython-38-x86_64-linux-gnu.so`: Arquivo *shared object* que é utilizado para executar o programa gerado pelo Cython. O único arquivo que deve estar presente para a execução do programa, após a compilação.
+
+Então, para executar o programa, basta utilizar o seguinte comando:
+
+> Python3 run.py
