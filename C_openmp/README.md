@@ -16,6 +16,7 @@ Para compilar, siga os passos a seguir:
 
 * Crie um novo diretório chamado `buil` e vá para ele.
 > mkdir build
+
 > cd build
 
 * Execute CMake para configurar o projeto.
