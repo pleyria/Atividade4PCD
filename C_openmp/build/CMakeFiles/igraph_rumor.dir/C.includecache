@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/pedro/Projetos python/Atividade4PCD/C_openmp/igraph_rumor.c
+stdio.h
+-
+stdlib.h
+-
 igraph.h
 -
 omp.h

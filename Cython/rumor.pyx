@@ -164,6 +164,8 @@ for i in range(1, tmax):
 	for j in range(num_vertices):		
 		if tipo[j] == 0 and deg[j] > 0:
 			new_tipo[j] = muda_estado(j)
+		else
+			new_tipo[j] = tipo[j]
 
 	for j in prange(num_vertices, nogil=True):
 		tipo[j] = new_tipo[j]

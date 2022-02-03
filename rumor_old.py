@@ -140,6 +140,8 @@ while i < tmax:
     for j in range(num_vertices):
         if tipo[j] == 0 and rede.degree(j) > 0: 
             new_tipo[j] = muda_estado(rede, j)
+        else
+            new_tipo[j] = tipo[j]
     tipo = new_tipo.copy()
     for x in tipo:
         if x == 0:
