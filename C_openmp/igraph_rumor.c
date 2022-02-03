@@ -14,7 +14,7 @@ int calcula_n0(igraph_t rede, igraph_integer_t v, int* tipo){
   igraph_vector_init(&vizinhos, 1);
 
   igraph_neighbors(&rede, &vizinhos, v, IGRAPH_ALL);
-  for(x = 0 ; x < igraph_vector_size(&vizinhos); x++){
+  for(x = 0; x < igraph_vector_size(&vizinhos); x++){
     if(tipo[(long) VECTOR(vizinhos)[x]] == 0)
       n0++;
   }
@@ -33,6 +33,7 @@ int calcula_n1(igraph_t rede, igraph_integer_t v, int* tipo){
 
   n1 = 0;
   igraph_maxdegree(&rede, &max, igraph_vss_all(), IGRAPH_ALL, 0);
+  maior = max;
 
   igraph_vector_init(&vizinhos, 1);
   igraph_neighbors(&rede, &vizinhos, v, IGRAPH_ALL);
@@ -63,6 +64,7 @@ int calcula_n2(igraph_t rede, igraph_integer_t v, int* tipo){
 
   n2 = 0;
   igraph_maxdegree(&rede, &max, igraph_vss_all(), IGRAPH_ALL, 0);
+  maior = max;
 
   igraph_vector_init(&vizinhos, 1);
   igraph_neighbors(&rede, &vizinhos, v, IGRAPH_ALL);
@@ -73,7 +75,7 @@ int calcula_n2(igraph_t rede, igraph_integer_t v, int* tipo){
     igraph_vs_1(&vs, x);
     igraph_degree(&rede, &deg, vs, IGRAPH_ALL, IGRAPH_NO_LOOPS);
     a = (float)rand()/RAND_MAX;
-    if(a < (float) VECTOR(deg)[0]/maior && tipo[x] == 1)
+    if(a < (float) VECTOR(deg)[0]/maior && tipo[x] == 2)
       n2++;
   }
   igraph_vector_destroy(&vizinhos);
@@ -118,7 +120,7 @@ int main() {
   igraph_vector_t deg;
 
   // Define o numero de threads
-  omp_set_num_threads(4);
+  omp_set_num_threads(8);
 
   // rede livre de escala
   igraph_barabasi_game(&rede, num_vertices, 1, 2, NULL, 0, 1, 0, IGRAPH_BARABASI_PSUMTREE, NULL);
@@ -201,7 +203,7 @@ int main() {
     quant_tipo0[i] = q0;
     quant_tipo1[i] = q1;
     quant_tipo2[i] = q2;
-    printf("i = %d\n", i);
+    //printf("i = %d\n", i);
   }
   end = omp_get_wtime();
 
@@ -214,7 +216,7 @@ int main() {
   printf("n2 = %d\n", q2);
   printf("total = %d\n", q0+q1+q2);
 
-  printf("Tempo de execucao = %lf segundos\n", end-start);
+  printf("Tempo de execucao = %.12lf segundos\n", end-start);
 
   return 0;
 }
