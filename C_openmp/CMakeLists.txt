@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
-project(rumor)
+project(igraph_rumor)
 
 find_package(igraph REQUIRED)
 
-add_executable(rumor_exec rumor.c)
-target_link_libraries(igraph_test PUBLIC igraph::igraph)
-
-
+add_executable(igraph_rumor igraph_rumor.c)
+target_link_libraries(igraph_rumor PUBLIC igraph::igraph)
