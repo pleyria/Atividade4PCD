@@ -417,8 +417,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">016</span>: <span class="k">cimport</span> <span class="nn">openmp</span></pre>
 <pre class="cython line score-0">&#xA0;<span class="">017</span>: </pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">018</span>: <span class="n">openmp</span><span class="o">.</span><span class="n">omp_set_num_threads</span><span class="p">(</span><span class="mf">4</span><span class="p">)</span></pre>
-<pre class='cython code score-0 '>  omp_set_num_threads(4);
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">018</span>: <span class="n">openmp</span><span class="o">.</span><span class="n">omp_set_num_threads</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span></pre>
+<pre class='cython code score-0 '>  omp_set_num_threads(2);
 </pre><pre class="cython line score-0">&#xA0;<span class="">019</span>: </pre>
 <pre class="cython line score-0">&#xA0;<span class="">020</span>: <span class="c"># parametros da simulacao</span></pre>
 <pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">021</span>: <span class="k">cdef</span> <span class="kt">int</span> <span class="nf">num_vertices</span> <span class="o">=</span> <span class="mf">5000</span></pre>

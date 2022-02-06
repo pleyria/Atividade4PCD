@@ -15,7 +15,7 @@ from cpython.mem cimport PyMem_Malloc, PyMem_Free
 from timeit import default_timer as timer
 cimport openmp
 
-openmp.omp_set_num_threads(4)
+openmp.omp_set_num_threads(2)
 
 # parametros da simulacao
 cdef int num_vertices = 5000

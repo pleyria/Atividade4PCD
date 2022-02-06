@@ -120,7 +120,7 @@ int main() {
   igraph_vector_t deg;
 
   // Define o numero de threads
-  omp_set_num_threads(8);
+  omp_set_num_threads(2);
 
   // rede livre de escala
   igraph_barabasi_game(&rede, num_vertices, 1, 2, NULL, 0, 1, 0, IGRAPH_BARABASI_PSUMTREE, NULL);

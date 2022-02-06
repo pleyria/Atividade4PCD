@@ -2874,11 +2874,11 @@ if (!__Pyx_RefNanny) {
   /* "rumor.pyx":18
  * cimport openmp
  * 
- * openmp.omp_set_num_threads(4)             # <<<<<<<<<<<<<<
+ * openmp.omp_set_num_threads(2)             # <<<<<<<<<<<<<<
  * 
  * # parametros da simulacao
  */
-  omp_set_num_threads(4);
+  omp_set_num_threads(2);
 
   /* "rumor.pyx":21
  * 

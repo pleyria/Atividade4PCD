@@ -11,6 +11,9 @@ O diretório `C_openmp` contém um implementação do problema orignal em lingua
 
 Todas as três versões disponíveis neste repositório usam a mesma biblioteca igraph (disponível em Python e C) para manipular a estrutura de dados de grafos.
 
+## Resultados
+Resultados de teste de desmepenho dos alogritmos disponíveis [nesta tabela](https://docs.google.com/spreadsheets/d/1et7R4TficKX_tw7l7peO5Njs3813JhO5R7RAzD1qyGU/edit?usp=sharing).
+
 ## Referências
 * https://igraph.org/
 * https://cmake.org/
