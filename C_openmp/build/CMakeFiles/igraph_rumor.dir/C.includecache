@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pedro/Projetos python/Atividade4PCD/C_openmp/igraph_rumor.c
+/home/pedro/PCD/Atividade4PCD/C_openmp/igraph_rumor.c
 stdio.h
 -
 stdlib.h

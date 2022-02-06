@@ -1,3 +1,3 @@
-/home/pedro/Projetos python/Atividade4PCD/C_openmp/build/CMakeFiles/rebuild_cache.dir
-/home/pedro/Projetos python/Atividade4PCD/C_openmp/build/CMakeFiles/edit_cache.dir
-/home/pedro/Projetos python/Atividade4PCD/C_openmp/build/CMakeFiles/igraph_rumor.dir
+/home/pedro/PCD/Atividade4PCD/C_openmp/build/CMakeFiles/rebuild_cache.dir
+/home/pedro/PCD/Atividade4PCD/C_openmp/build/CMakeFiles/edit_cache.dir
+/home/pedro/PCD/Atividade4PCD/C_openmp/build/CMakeFiles/igraph_rumor.dir

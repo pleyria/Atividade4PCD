@@ -4,7 +4,7 @@
 Os arquivos presentes neste diretório implementam uma versão do problema original em linguagem C. A biblioteca igraph é utilizada para manipular grafos e a seção paralela foi implementada com cláusulas OpenMP.
 
 ## Requisitos
-Para compilar e executar este projeto é preciso ter um compilador C, a ferramenta CMake e a biblioteca igraph C instalados.
+Para compilar e executar este projeto é preciso ter um compilador C, a ferramenta CMake (versão 3.16 ou mais recente) e a biblioteca igraph C instalados. Também é necessária uma distribuição da API OpenMP para C.
 
 ## Arquivos
 * O arquivo `igraph_rumor.c` contém o programa principal com código em C.

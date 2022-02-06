@@ -4,7 +4,7 @@
 Cython é um superconjunto da linguagem Python que apresenta todas as funcionalidades já esperadas do Python e a possibilidade de utilziar variáveis e estruturas da linguagem C, com compliação e otimização para trechos de código a serem executados pelo compilador C e, assim, ganhar desempenho. Os arquivos deste diretório implementam uma versão do problema original em Cython.
 
 ## Requisitos
-Para compilar e executar este projeto é preciso ter os seguintes pacotes Cython e Matplotlib instalados.
+Para compilar e executar este projeto é preciso ter um interpretador Python 3 e os pacotes Cython e Matplotlib instalados. Também é necessária uma distribuição da API OpenMP para C.
 
 ## Arquivos
 * O arquivo `rumor.pyx`contém o programa principal com código em python e utilizando funcionalidades da linguagem C.
@@ -30,4 +30,5 @@ Isso irá gerar os seguintes arquivos/diretórios:
 
 Então, para executar o programa, basta utilizar o seguinte comando:
 
-> Python3 run.py
+> python3 run.py
+

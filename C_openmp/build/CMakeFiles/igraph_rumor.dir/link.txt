@@ -1,1 +1,1 @@
-/usr/bin/c++  -O3   CMakeFiles/igraph_rumor.dir/igraph_rumor.c.o  -o igraph_rumor  /usr/local/lib/libigraph.a -lm /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so 
+/usr/bin/c++  -O3   CMakeFiles/igraph_rumor.dir/igraph_rumor.c.o  -o igraph_rumor  /usr/local/lib/libigraph.a -lm /usr/lib/x86_64-linux-gnu/libgmp.so /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so 

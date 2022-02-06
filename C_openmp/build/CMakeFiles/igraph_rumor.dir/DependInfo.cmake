@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/pedro/Projetos python/Atividade4PCD/C_openmp/igraph_rumor.c" "/home/pedro/Projetos python/Atividade4PCD/C_openmp/build/CMakeFiles/igraph_rumor.dir/igraph_rumor.c.o"
+  "/home/pedro/PCD/Atividade4PCD/C_openmp/igraph_rumor.c" "/home/pedro/PCD/Atividade4PCD/C_openmp/build/CMakeFiles/igraph_rumor.dir/igraph_rumor.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

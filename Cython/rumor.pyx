@@ -15,7 +15,7 @@ from cpython.mem cimport PyMem_Malloc, PyMem_Free
 from timeit import default_timer as timer
 cimport openmp
 
-openmp.omp_set_num_threads(8)
+openmp.omp_set_num_threads(4)
 
 # parametros da simulacao
 cdef int num_vertices = 5000
@@ -164,7 +164,7 @@ for i in range(1, tmax):
 	for j in range(num_vertices):		
 		if tipo[j] == 0 and deg[j] > 0:
 			new_tipo[j] = muda_estado(j)
-		else
+		else:
 			new_tipo[j] = tipo[j]
 
 	for j in prange(num_vertices, nogil=True):
@@ -179,7 +179,7 @@ for i in range(1, tmax):
 	quant_tipo0[i] = q0
 	quant_tipo1[i] = q1
 	quant_tipo2[i] = q2
-	print("i = ", i)
+	# print("i = ", i)
 
 # registra o tempo final
 finish = timer()
