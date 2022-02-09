@@ -14,6 +14,8 @@ Todas as três versões disponíveis neste repositório usam a mesma biblioteca 
 ## Resultados
 Resultados de teste de desmepenho dos alogritmos disponíveis [nesta tabela](https://docs.google.com/spreadsheets/d/1et7R4TficKX_tw7l7peO5Njs3813JhO5R7RAzD1qyGU/edit?usp=sharing).
 
+O vídeo explicativo do trabalho pode ser encontrado [neste link](https://drive.google.com/file/d/1_IpASHpXv5byaNRbje1iFb1crEN14Sbj/view?usp=sharing).
+
 ## Referências
 * https://igraph.org/
 * https://cmake.org/
